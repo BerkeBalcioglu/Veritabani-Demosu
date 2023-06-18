@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             components=new System.ComponentModel.Container();
+            contextMenuStrip1=new ContextMenuStrip(components);
+            comboBox1=new ComboBox();
             adı=new Label();
             soyadı=new Label();
             ıd=new Label();
@@ -39,10 +41,24 @@
             label1=new Label();
             label2=new Label();
             ekle=new Button();
-            menuStrip1=new MenuStrip();
-            contextMenuStrip1=new ContextMenuStrip(components);
-            comboBox1=new ComboBox();
             SuspendLayout();
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name="contextMenuStrip1";
+            contextMenuStrip1.Size=new Size(61, 4);
+            // 
+            // comboBox1
+            // 
+            comboBox1.FlatStyle=FlatStyle.Flat;
+            comboBox1.FormattingEnabled=true;
+            comboBox1.Items.AddRange(new object[] { "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Aksaray", "Amasya", "Ankara", "Antalya", "Ardahan", "Artvin", "Aydın", "Balıkesir", "Bartın", "Batman", "Bayburt", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Düzce", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkâri", "Hatay", "Iğdır", "Isparta", "İstanbul", "İzmir", "Kahramanmaraş", "Karabük", "Karaman", "Kars", "Kastamonu", "Kayseri", "Kırıkkale", "Kırklareli", "Kırşehir", "Kilis", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Mardin", "Mersin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Osmaniye", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Şanlıurfa", "Şırnak", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Uşak", "Van", "Yalova", "Yozgat", "Zonguldak" });
+            comboBox1.Location=new Point(84, 125);
+            comboBox1.Name="comboBox1";
+            comboBox1.Size=new Size(114, 23);
+            comboBox1.Sorted=true;
+            comboBox1.TabIndex=13;
+            comboBox1.SelectedIndexChanged+=comboBox1_SelectedIndexChanged_1;
             // 
             // adı
             // 
@@ -130,31 +146,6 @@
             ekle.UseVisualStyleBackColor=true;
             ekle.Click+=ekle_Click;
             // 
-            // menuStrip1
-            // 
-            menuStrip1.Location=new Point(0, 0);
-            menuStrip1.Name="menuStrip1";
-            menuStrip1.Size=new Size(800, 24);
-            menuStrip1.TabIndex=11;
-            menuStrip1.Text="menuStrip1";
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.Name="contextMenuStrip1";
-            contextMenuStrip1.Size=new Size(61, 4);
-            // 
-            // comboBox1
-            // 
-            comboBox1.FlatStyle=FlatStyle.Flat;
-            comboBox1.FormattingEnabled=true;
-            comboBox1.Items.AddRange(new object[] { "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Aksaray", "Amasya", "Ankara", "Antalya", "Ardahan", "Artvin", "Aydın", "Balıkesir", "Bartın", "Batman", "Bayburt", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Düzce", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkâri", "Hatay", "Iğdır", "Isparta", "İstanbul", "İzmir", "Kahramanmaraş", "Karabük", "Karaman", "Kars", "Kastamonu", "Kayseri", "Kırıkkale", "Kırklareli", "Kırşehir", "Kilis", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Mardin", "Mersin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Osmaniye", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Şanlıurfa", "Şırnak", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Uşak", "Van", "Yalova", "Yozgat", "Zonguldak" });
-            comboBox1.Location=new Point(84, 125);
-            comboBox1.Name="comboBox1";
-            comboBox1.Size=new Size(114, 23);
-            comboBox1.Sorted=true;
-            comboBox1.TabIndex=13;
-            comboBox1.SelectedIndexChanged+=comboBox1_SelectedIndexChanged_1;
-            // 
             // DvcıEKLE
             // 
             AutoScaleDimensions=new SizeF(7F, 15F);
@@ -171,8 +162,6 @@
             Controls.Add(ıd);
             Controls.Add(soyadı);
             Controls.Add(adı);
-            Controls.Add(menuStrip1);
-            MainMenuStrip=menuStrip1;
             Name="DvcıEKLE";
             Text="DvcıEKLE";
             Load+=DvcıEKLE_Load;
@@ -181,7 +170,8 @@
         }
 
         #endregion
-
+        private ContextMenuStrip contextMenuStrip1;
+        private ComboBox comboBox1;
         private Label adı;
         private Label soyadı;
         private Label ıd;
@@ -192,8 +182,5 @@
         private Label label1;
         private Label label2;
         private Button ekle;
-        private MenuStrip menuStrip1;
-        private ContextMenuStrip contextMenuStrip1;
-        private ComboBox comboBox1;
     }
 }

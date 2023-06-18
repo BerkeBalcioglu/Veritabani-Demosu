@@ -72,6 +72,23 @@ namespace Adli_İşlemler
 
         private void ekle_Click(object sender, EventArgs e)
         {
+            baglan.Close();
+            try
+            {
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("davalı kaydı eklenirken veri tabanı hatası alındı");
+            }
+
+
+
+
+
+
+
 
         }
 

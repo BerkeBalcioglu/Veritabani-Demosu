@@ -11,6 +11,10 @@ namespace Adli_İşlemler
 
         private void davalıSilToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DavacıSil frm = new DavacıSil();  //davacı formunu seçilen kategoriye ekler.
+            frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
+            frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
+            frm.Show(); //formu görünür kılar.
 
         }
 
@@ -34,18 +38,42 @@ namespace Adli_İşlemler
             frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
             frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
             frm.Show(); //formu görünür kılar.
-            // yukarıdaki kodlar ile açılan yeni formu ana ekran yerine yeni form koyarak açar.
-            
+                        // yukarıdaki kodlar ile açılan yeni formu ana ekran yerine yeni form koyarak açar.
+
         }
 
         private void davacıSilGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DvcSİL frm = new DvcSİL();  //davacı formunu seçilen kategoriye ekler.
+            DavacıSil frm = new DavacıSil();  //davacı formunu seçilen kategoriye ekler.
             frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
             frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
             frm.Show(); //formu görünür kılar.
 
 
+        }
+
+        private void davalıEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DavalıEkle frm = new DavalıEkle();  //davacı formunu seçilen kategoriye ekler.
+            frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
+            frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
+            frm.Show(); //formu görünür kılar.
+        }
+
+        private void hakimSilGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DavacıSil frm = new DavacıSil();  //davacı formunu seçilen kategoriye ekler.
+            frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
+            frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
+            frm.Show(); //formu görünür kılar.
+        }
+
+        private void hakimEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DavalıEkle frm = new DavalıEkle();  //davacı formunu seçilen kategoriye ekler.
+            frm.MdiParent = this; //MDI ana formunun bir çocuk formu olarak belirlemek için kullanılır
+            frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
+            frm.Show(); //formu görünür kılar.
         }
     }
 }

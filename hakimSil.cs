@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Adli_İşlemler
 {
-    public partial class DvcSİL : Form
+    public partial class hakimSil : Form
     {
-        public DvcSİL()
+        public hakimSil()
         {
             InitializeComponent();
         }

@@ -64,6 +64,7 @@
             davalıEkleToolStripMenuItem.Name="davalıEkleToolStripMenuItem";
             davalıEkleToolStripMenuItem.Size=new Size(172, 22);
             davalıEkleToolStripMenuItem.Text="Davalı Ekle";
+            davalıEkleToolStripMenuItem.Click+=davalıEkleToolStripMenuItem_Click;
             // 
             // davalıSilToolStripMenuItem
             // 
@@ -82,14 +83,14 @@
             // davacıEkleToolStripMenuItem
             // 
             davacıEkleToolStripMenuItem.Name="davacıEkleToolStripMenuItem";
-            davacıEkleToolStripMenuItem.Size=new Size(180, 22);
+            davacıEkleToolStripMenuItem.Size=new Size(175, 22);
             davacıEkleToolStripMenuItem.Text="Davacı Ekle";
             davacıEkleToolStripMenuItem.Click+=davacıEkleToolStripMenuItem_Click;
             // 
             // davacıSilGüncelleToolStripMenuItem
             // 
             davacıSilGüncelleToolStripMenuItem.Name="davacıSilGüncelleToolStripMenuItem";
-            davacıSilGüncelleToolStripMenuItem.Size=new Size(180, 22);
+            davacıSilGüncelleToolStripMenuItem.Size=new Size(175, 22);
             davacıSilGüncelleToolStripMenuItem.Text="Davacı Sil/Güncelle";
             davacıSilGüncelleToolStripMenuItem.Click+=davacıSilGüncelleToolStripMenuItem_Click;
             // 
@@ -103,14 +104,16 @@
             // hakimEkleToolStripMenuItem
             // 
             hakimEkleToolStripMenuItem.Name="hakimEkleToolStripMenuItem";
-            hakimEkleToolStripMenuItem.Size=new Size(175, 22);
+            hakimEkleToolStripMenuItem.Size=new Size(180, 22);
             hakimEkleToolStripMenuItem.Text="Hakim Ekle";
+            hakimEkleToolStripMenuItem.Click+=hakimEkleToolStripMenuItem_Click;
             // 
             // hakimSilGüncelleToolStripMenuItem
             // 
             hakimSilGüncelleToolStripMenuItem.Name="hakimSilGüncelleToolStripMenuItem";
-            hakimSilGüncelleToolStripMenuItem.Size=new Size(175, 22);
+            hakimSilGüncelleToolStripMenuItem.Size=new Size(180, 22);
             hakimSilGüncelleToolStripMenuItem.Text="Hakim Sil/Güncelle";
+            hakimSilGüncelleToolStripMenuItem.Click+=hakimSilGüncelleToolStripMenuItem_Click;
             // 
             // çıkışToolStripMenuItem
             // 

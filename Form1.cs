@@ -35,6 +35,7 @@ namespace Adli_İşlemler
             frm.Dock = DockStyle.Fill; //tam dock boyutunda yapar.
             frm.Show(); //formu görünür kılar.
             // yukarıdaki kodlar ile açılan yeni formu ana ekran yerine yeni form koyarak açar.
+            
         }
 
         private void davacıSilGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
